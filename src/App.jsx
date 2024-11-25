@@ -9,6 +9,7 @@ function App() {
       <Preloader />
       <Topbar />
       <Header />
+      <div className="main-cont"></div>
     </>
   )
 }

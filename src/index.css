@@ -189,6 +189,14 @@ li {
   bottom: -5px;
 }
 
+button {
+  background-color: transparent;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /*-----------------------------------*\
   #TYPOGRAPHY
 \*-----------------------------------*/
@@ -260,4 +268,8 @@ li {
 
 .label-2 {
   font-size: var(--fontSize-label-2);
+}
+
+.main-cont {
+  height: 300vh;
 }

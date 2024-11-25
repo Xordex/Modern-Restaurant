@@ -1,17 +1,40 @@
 import './header.css';
 import logo from '../../assets/logo.svg';
 import { FaX } from 'react-icons/fa6';
+import { useEffect, useState } from 'react';
+import useDetectScroll from '@smakss/react-scroll-direction';
 
 export default function Header() {
+    const [navbarActive, setNavbarActive] = useState(false);
+    const [headerActive, setheaderActive] = useState(false);
+    const [headerHide, setheaderHide] = useState(false);
+    const { scrollDir } = useDetectScroll();
+
+    useEffect(() => {
+        window.addEventListener("scroll", function () {
+            if (this.window.scrollY > 50) {
+                setheaderActive(true);
+            } else {
+                setheaderActive(false);
+            }
+
+            if (scrollDir == "up") {
+                setheaderHide(false);
+            } else {
+                setheaderHide(true);
+            }
+        })
+    }, [scrollDir]);
+
     return (
-        <header className='header'>
+        <header className={`header ${headerActive && "active"} ${headerHide && "hide"}`} >
             <div className="container">
                 <a href="#" className='logo'>
                     <img src={logo} alt="Grilli - Home" width="160" height="50" />
                 </a>
 
-                <nav className="navbar">
-                    <button className="close-btn" aria-label='close menu'>
+                <nav className={`navbar ${navbarActive && "active"}`}>
+                    <button className="close-btn" aria-label='close menu' onClick={() => setNavbarActive(false)}>
                         <FaX />
                     </button>
 
@@ -30,7 +53,7 @@ export default function Header() {
                         </li>
 
                         <li className="navbar-item">
-                            <a href="#menus" className="navbar-link hover-underline active">
+                            <a href="#menus" className="navbar-link hover-underline">
                                 <div className="separator"></div>
 
                                 <span className="span">Menus</span>
@@ -39,7 +62,7 @@ export default function Header() {
                         </li>
 
                         <li className="navbar-item">
-                            <a href="#about" className="navbar-link hover-underline active">
+                            <a href="#about" className="navbar-link hover-underline">
                                 <div className="separator"></div>
 
                                 <span className="span">About us</span>
@@ -48,7 +71,7 @@ export default function Header() {
                         </li>
 
                         <li className="navbar-item">
-                            <a href="#chefs" className="navbar-link hover-underline active">
+                            <a href="#chefs" className="navbar-link hover-underline">
                                 <div className="separator"></div>
 
                                 <span className="span">Our Chefs</span>
@@ -57,7 +80,7 @@ export default function Header() {
                         </li>
 
                         <li className="navbar-item">
-                            <a href="#pages" className="navbar-link hover-underline active">
+                            <a href="#pages" className="navbar-link hover-underline">
                                 <div className="separator"></div>
 
                                 <span className="span">Pages</span>
@@ -66,7 +89,7 @@ export default function Header() {
                         </li>
 
                         <li className="navbar-item">
-                            <a href="#contact" className="navbar-link hover-underline active">
+                            <a href="#contact" className="navbar-link hover-underline">
                                 <div className="separator"></div>
 
                                 <span className="span">Contact</span>
@@ -85,7 +108,7 @@ export default function Header() {
 
                         <p className="body-4 navbar-text">Open: 9.30 am - 2.30 pm</p>
 
-                        <a href="mailto:booking@grilli.com" className='sidebar-link'>booking@grilli.com</a>
+                        <a href="mailto:booking@grilli.com" className='body-4 sidebar-link'>booking@grilli.com</a>
 
                         <div className="separator"></div>
 
@@ -103,11 +126,11 @@ export default function Header() {
                     <span className="text text-2">Find A Table</span>
                 </a>
 
-                <button className="nav-open-btn">
-                    <span className="line line-1"></span>
-                    <span className="line line-2"></span>
-                    <span className="line line-3"></span>
-                </button>
+                <div className="nav-open-btn" onClick={() => setNavbarActive(true)}>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                    <span className="line"></span>
+                </div>
 
                 <div className="overlay"></div>
 

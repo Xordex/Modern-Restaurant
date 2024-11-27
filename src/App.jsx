@@ -1,4 +1,5 @@
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero/Hero";
 import Preloader from "./components/preloader/Preloader";
 import Topbar from "./components/Topbar/Topbar";
 
@@ -9,7 +10,11 @@ function App() {
       <Preloader />
       <Topbar />
       <Header />
-      <div className="main-cont"></div>
+      <main>
+        <article>
+          <Hero />
+        </article>
+      </main>
     </>
   )
 }

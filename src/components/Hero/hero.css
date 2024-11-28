@@ -1,5 +1,22 @@
 .hero .slider-btn {
-    display: none;
+    background-color: black;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    left: 1vw;
+    top: 55%;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.hero .slider-btn:hover {
+    opacity: 1;
+}
+
+.hero .slider-btn.next {
+    left: 89%;
 }
 
 .hero {

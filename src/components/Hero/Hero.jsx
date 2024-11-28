@@ -2,25 +2,25 @@ import './hero.css';
 import HeroImg from '../../assets/hero-slider-1.jpg';
 import HeroImg2 from '../../assets/hero-slider-2.jpg';
 import HeroImg3 from '../../assets/hero-slider-3.jpg';
-import { FaChevronCircleDown } from 'react-icons/fa';
+import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import HeroIcon from '../../assets/hero-icon.png';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+let ssss = null;
 
 export default function Hero() {
     const [slider, setSlider] = useState(1);
 
-    const nextslidetimeout = setTimeout(nextSlide, 6000);
+    const nextSlide = useCallback(() => {
+        setSlider(slider === 3 ? 1 : slider + 1);
+    }, [slider])
 
-    function nextSlide() {
-        slider === 1 && setSlider(2);
-        slider === 2 && setSlider(3);
-        slider === 3 && setSlider(1);
-    };
+    useEffect(() => {
+        ssss && clearTimeout(ssss);
+        ssss = setTimeout(() => nextSlide(), 6000);
+    }, [nextSlide])
 
     function prevSlide() {
-        slider === 1 && setSlider(3);
-        slider === 2 && setSlider(1);
-        slider === 3 && setSlider(2);
+        setSlider(slider === 1 ? 3 : slider - 1);
     };
 
     return (
@@ -96,12 +96,12 @@ export default function Hero() {
                 </li>
             </ul>
 
-            <button className="slider-btn prev" onClick={() => { prevSlide(); clearTimeout(nextslidetimeout); }}>
-                <FaChevronCircleDown />
+            <button className="slider-btn prev" onClick={() => { prevSlide(); }}>
+                <FaChevronCircleLeft />
             </button>
 
-            <button className="slider-btn next" onClick={() => { nextSlide(); clearTimeout(nextslidetimeout); }}>
-                <FaChevronCircleDown />
+            <button className="slider-btn next" onClick={() => { nextSlide(); }}>
+                <FaChevronCircleRight />
             </button>
 
             <a href="#" className="hero-btn has-after">

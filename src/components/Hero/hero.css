@@ -16,7 +16,8 @@
 }
 
 .hero .slider-btn.next {
-    left: 89%;
+    left: auto;
+    right: 1vw;
 }
 
 .hero {

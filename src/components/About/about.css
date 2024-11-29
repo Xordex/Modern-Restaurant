@@ -1,0 +1,66 @@
+.about .section-text {
+    margin-block: 15px 30px;
+}
+
+.about .btn {
+    margin-inline: auto;
+    margin-block-start: 26px;
+}
+
+.about .container {
+    display: grid;
+    gap: 30px;
+}
+
+.about-banner {
+    min-height: 55vh;
+    position: relative;
+    margin: 8vh 0;
+}
+
+.aboutBanner {
+    max-width: 250px;
+    max-height: 250px;
+    position: absolute;
+    top: 10vh;
+    right: 3vw;
+}
+
+.abs-img-1 {
+    position: absolute;
+    top: 30vh;
+    left: 3vw;
+}
+
+.AboutAbsImage {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.has-before::before {
+    height: 150%;
+    width: 90%;
+    content: "";
+    background-image: url('../../assets/img-pattern.svg');
+    position: absolute;
+    top: -25%;
+    left: 5%;
+    z-index: -1;
+}
+
+.abs-img-2 {
+    position: absolute;
+    right: 5vw;
+    overflow: hidden;
+}
+
+.abs-img-2::before {
+    content: "";
+    margin-bottom: 1vh;
+    inset: 0;
+    background-image: url('../../assets/badge-2-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    animation: rotate360 15s linear infinite;
+}

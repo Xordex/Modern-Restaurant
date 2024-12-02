@@ -1,6 +1,7 @@
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
+import Menu from "./components/Menu/Menu";
 import Preloader from "./components/preloader/Preloader";
 import Service from "./components/Service/Service";
 import SpecialDish from "./components/SpecialDish/SpecialDish";
@@ -19,6 +20,7 @@ function App() {
           <Service />
           <About />
           <SpecialDish />
+          <Menu />
         </article>
       </main>
     </>

@@ -5,6 +5,7 @@ import Menu from "./components/Menu/Menu";
 import Preloader from "./components/preloader/Preloader";
 import Service from "./components/Service/Service";
 import SpecialDish from "./components/SpecialDish/SpecialDish";
+import Testimonials from "./components/Testimonials/Testimonials";
 import Topbar from "./components/Topbar/Topbar";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <About />
           <SpecialDish />
           <Menu />
+          <Testimonials />
         </article>
       </main>
     </>

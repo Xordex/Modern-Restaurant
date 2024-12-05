@@ -292,7 +292,7 @@ button {
 .has-before,
 .has-after {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .has-before::before,

@@ -1,6 +1,8 @@
 import About from "./components/About/About";
+import BackToTop from "./components/BackToTop/BackToTop";
 import Event from "./components/Event/Event";
 import Features from "./components/Features/Features";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Menu from "./components/Menu/Menu";
@@ -29,6 +31,8 @@ function App() {
           <Reservation />
           <Features />
           <Event />
+          <Footer />
+          <BackToTop />
         </article>
       </main>
     </>

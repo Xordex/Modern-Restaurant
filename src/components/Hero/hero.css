@@ -154,3 +154,10 @@
 .hero .slider-item.active .btn {
     animation-delay: 2s;
 }
+
+@media (min-width: 575px) {
+    .hero-btn {
+        transform: scale(0.7);
+    }
+
+}

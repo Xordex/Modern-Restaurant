@@ -48,3 +48,10 @@
 .service .card-title {
     margin-block-end: 12px;
 }
+
+@media (min-width: 575px) {
+    .service .container {
+        max-width: 520px;
+        margin-inline: auto;
+    }
+}

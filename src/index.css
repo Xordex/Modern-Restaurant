@@ -103,6 +103,21 @@
 
 }
 
+@media (min-width: 575px) {
+  :root {
+    --fontSize-body-2: 2rem;
+  }
+
+  :is(.service, .about) .section-text {
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .contact-number {
+    --fontSize-body-1: 3rem;
+  }
+}
+
 /*-----------------------------------*\
   #RESET 
 \*-----------------------------------*/

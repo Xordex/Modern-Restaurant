@@ -110,3 +110,28 @@
     color: var(--gold-crayola);
     text-decoration: underline;
 }
+
+
+@media (min-width: 575px) {
+    .footer>* {
+        max-width: 560px;
+        margin-inline: auto;
+    }
+
+    .footer .input-wrapper {
+        position: relative;
+    }
+
+    .footer .input-field {
+        margin-block-end: 0;
+        padding-inline-end: 205px;
+    }
+
+    .footer-brand .btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-width: max-content;
+    }
+}

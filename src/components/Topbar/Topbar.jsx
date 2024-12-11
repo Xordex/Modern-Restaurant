@@ -25,7 +25,7 @@ export default function Topbar() {
                     <span className="span">Daily: 8.00 am to 10.00 pm</span>
                 </div>
 
-                <a href="tel:730728446" className='topbar-item'>
+                <a href="tel:730728446" className='topbar-item link'>
                     <div className="icon">
                         <FaPhone />
                     </div>
@@ -35,7 +35,7 @@ export default function Topbar() {
 
                 <div className="separator"></div>
 
-                <a href="mailto:kontakt@michaljaroch.pl" className='topbar-item'>
+                <a href="mailto:kontakt@michaljaroch.pl" className='topbar-item link'>
                     <div className="icon">
                         <FaEnvelope />
                     </div>

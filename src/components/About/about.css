@@ -64,3 +64,29 @@
     position: absolute;
     animation: rotate360 15s linear infinite;
 }
+
+
+@media (min-width: 575px) {
+    .about .container {
+        gap: 80px;
+    }
+
+    .about-banner>.w-100 {
+        padding-inline-start: 90px;
+    }
+
+    .aboutBanner {
+        max-width: 450px;
+        max-height: 450px;
+    }
+
+
+    .AboutAbsImage {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .about .contact-number {
+        --fontSize-body-1: 2.4rem;
+    }
+}

@@ -56,3 +56,14 @@
         color: var(--gold-crayola);
     }
 }
+
+
+@media (min-width: 992px) {
+    .topbar-item:not(.link) {
+        display: flex;
+    }
+
+    .topbar .item-2 {
+        margin-inline-end: auto;
+    }
+}

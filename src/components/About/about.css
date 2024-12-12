@@ -80,7 +80,6 @@
         max-height: 450px;
     }
 
-
     .AboutAbsImage {
         max-width: 300px;
         max-height: 300px;
@@ -88,5 +87,12 @@
 
     .about .contact-number {
         --fontSize-body-1: 2.4rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .about .container {
+        grid-template: 0.7fr 1fr;
+        gap: 30px;
     }
 }

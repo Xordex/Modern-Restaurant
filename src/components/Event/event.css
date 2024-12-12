@@ -55,7 +55,7 @@
 
 @media (min-width: 575px) {
     .event .container {
-        max-width: 520px;
+        max-width: 420px;
         margin-inline: auto;
     }
 }

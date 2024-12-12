@@ -33,3 +33,11 @@
     text-transform: uppercase;
     letter-spacing: var(--letterSpacing-3);
 }
+
+
+@media (min-width: 992px) {
+    .testi-text {
+        max-width: 910px;
+        margin-inline: auto;
+    }
+}

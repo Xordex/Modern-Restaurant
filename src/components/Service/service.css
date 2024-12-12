@@ -51,7 +51,29 @@
 
 @media (min-width: 575px) {
     .service .container {
-        max-width: 520px;
+        max-width: 420px;
         margin-inline: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .service .container {
+        max-width: 620px;
+    }
+}
+
+@media (min-width: 992px) {
+    .service .shape {
+        display: block;
+    }
+
+    .service .shape-1 {
+        bottom: 0;
+        left: 0;
+    }
+
+    .service .shape-2 {
+        top: 0;
+        right: 0;
     }
 }

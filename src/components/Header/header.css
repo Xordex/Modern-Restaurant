@@ -216,3 +216,10 @@
         margin-right: 10px;
     }
 }
+
+
+@media (min-width: 768px) {
+    .navbar-list {
+        margin-inline: 30px;
+    }
+}

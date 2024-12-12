@@ -125,3 +125,20 @@
         border-block: 1px solid var(--white-alpha-20);
     }
 }
+
+
+@media (min-width: 992px) {
+    .menu .grid-list {
+        position: relative;
+        column-gap: 90px;
+    }
+
+    .menu .grid-list::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        border-inline-start: 1px solid var(--white-alpha-20);
+    }
+}

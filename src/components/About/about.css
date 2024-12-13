@@ -90,9 +90,64 @@
     }
 }
 
+@media (min-width: 768px) {
+    .aboutBanner {
+        max-width: 600px;
+        max-height: 700px;
+        padding-bottom: 150px;
+    }
+}
+
 @media (min-width: 992px) {
     .about .container {
         grid-template: 0.7fr 1fr;
         gap: 30px;
+    }
+
+    .aboutBanner {
+        max-width: 650px;
+        max-height: 650px;
+    }
+
+    .AboutAbsImage {
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .about {
+        padding-block: 170px 100px;
+        margin-bottom: 10vh;
+    }
+
+    .aboutBanner {
+        max-width: 1200px;
+        min-height: 75vh;
+    }
+
+    .AboutAbsImage {
+        max-width: 600px;
+        max-height: 600px;
+    }
+
+    .abs-img-1 {
+        position: absolute;
+        top: 0vh;
+        left: -6vw;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .about-content {
+        padding-inline-end: 90px;
+    }
+
+    .about .shape {
+        display: block;
+        top: 46%;
+        left: 0;
     }
 }

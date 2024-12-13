@@ -3,7 +3,7 @@ import FeatureIcon1 from '../../assets/features-icon-1.png';
 import FeatureIcon2 from '../../assets/features-icon-2.png';
 import FeatureIcon3 from '../../assets/features-icon-3.png';
 import FeatureIcon4 from '../../assets/features-icon-4.png';
-import ShapeImg1 from '../../assets/shape-1.png';
+import ShapeImg1 from '../../assets/shape-7.png';
 import ShapeImg8 from '../../assets/shape-8.png';
 
 export default function Features() {

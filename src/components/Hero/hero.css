@@ -9,10 +9,18 @@
     height: 5vh;
     border-radius: 50%;
     opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .slider-btn svg {
+    width: 80%;
 }
 
 .hero .slider-btn:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .hero .slider-btn.next {
@@ -194,5 +202,38 @@
     .hero .slider-btn:is(:hover, :focus-visible) {
         background-color: var(--gold-crayola);
         color: var(--black);
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .hero {
+        height: 880px;
+    }
+
+    .hero-btn {
+        bottom: 50px;
+        right: 50px;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 2000px) {
+    .hero .slider-btn {
+        top: 50%;
+        width: 65px;
+        height: 65px;
+    }
+
+    .hero .slider-btn.prev {
+        left: 4vw;
+    }
+
+    .hero .slider-btn.next {
+        right: 4vw;
+    }
+
+    .hero .slider-btn svg {
+        width: 100%;
     }
 }

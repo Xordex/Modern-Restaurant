@@ -41,3 +41,12 @@
         margin-inline: auto;
     }
 }
+
+
+@media (min-width: 1200px) {
+
+    .form-left,
+    .form-right {
+        padding: 75px 60px;
+    }
+}

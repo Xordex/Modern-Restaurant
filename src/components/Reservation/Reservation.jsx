@@ -11,8 +11,7 @@ export default function Reservation() {
                         <h2 className="headline-1 text-center">Online Reservation</h2>
 
                         <p className="form-text text-center">
-                            Booking request <a href="tel:3467893456" className='link'>+48567893446</a>
-                            or fill out the order form
+                            Booking request <a href="tel:3467893456" className='link'>+48567893446</a> or fill out the order form
                         </p>
 
                         <div className="input-wrapper">
@@ -36,9 +35,6 @@ export default function Reservation() {
 
                                 <FaChevronCircleDown />
                             </div>
-                        </div>
-
-                        <div className="input-wrapper">
                             <div className="icon-wrapper">
                                 <FaCalendar />
 
@@ -46,9 +42,7 @@ export default function Reservation() {
 
                                 <FaChevronCircleDown />
                             </div>
-                        </div>
 
-                        <div className="input-wrapper">
                             <div className="icon-wrapper">
                                 <FaClock />
 
@@ -81,7 +75,7 @@ export default function Reservation() {
                     </form>
 
                     <div className="form-right text-center">
-                        <h2 className="headline-1 text-center">Contact Us</h2>
+                        <h2 className="headline-2 text-center">Contact Us</h2>
 
                         <p className="contact-label">Booking Request</p>
 

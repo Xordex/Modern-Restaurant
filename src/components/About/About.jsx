@@ -39,8 +39,11 @@ export default function About() {
                         <img src={BadgeImg} width="133" height="134" loading='lazy' alt="since 1950" />
                     </div>
 
-                    <img src={ShapeImg} alt="" width="197" height="194" loading='lazy' className='shape' />
                 </figure>
+
+                <img src={ShapeImg} alt="" width="197" height="194" loading='lazy' className='shape' />
+
+
             </div>
         </section>
     )

@@ -54,7 +54,6 @@ export default function Menu() {
                                         <a href="#" className="card-title">Lasagne</a>
                                     </h3>
 
-                                    <span className="badge label-1">Seasonal</span>
 
                                     <span className="span title-2">$40.00</span>
                                 </div>

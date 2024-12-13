@@ -126,6 +126,13 @@
     }
 }
 
+@media (min-width: 768px) {
+
+    :is(.service, .event) .container {
+        max-width: 820px;
+    }
+}
+
 
 @media (min-width: 992px) {
     .menu .grid-list {
@@ -140,5 +147,12 @@
         left: 50%;
         height: 100%;
         border-inline-start: 1px solid var(--white-alpha-20);
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu .grid-list {
+        gap: 55px 200px;
+        margin-block-end: 55px;
     }
 }

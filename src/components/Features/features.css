@@ -32,3 +32,32 @@
     color: var(--quick-silver);
     line-height: var(--lineHeight-6);
 }
+
+
+
+@media (min-width: 1200px) {
+    .features .grid-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .features {
+        overflow: visible;
+    }
+
+    .features .shape {
+        display: block;
+    }
+
+    .features .shape-1 {
+        top: -100px;
+        right: 0;
+    }
+
+    .features .shape-2 {
+        bottom: 80px;
+        left: 0;
+    }
+}

@@ -153,6 +153,22 @@
   }
 }
 
+@media (min-width: 1200px) {
+  :root {
+    --fontSize-title-2: 2.5rem;
+  }
+
+  .container,
+  :is(.service, .event) .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    width: 100%;
+  }
+}
+
+
+
+
 
 
 /*-----------------------------------*\
@@ -312,7 +328,7 @@ button {
   left: 50%;
   transform: translateX(-50%);
   min-width: max-content;
-  color: var(--smoky-black-1);
+  color: var(--gold-crayola);
 }
 
 .btn:is(:hover, :focus-visible)::before {
@@ -328,6 +344,10 @@ button {
   transform: translate(-50%, -50%);
 }
 
+.btn-primary .text-2 {
+  color: var(--smoky-black-1);
+}
+
 .btn-secondary {
   background-color: var(--gold-crayola);
   color: var(--black);
@@ -339,6 +359,10 @@ button {
 
 .btn::before .text-2 {
   color: var(--white);
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 .has-before,

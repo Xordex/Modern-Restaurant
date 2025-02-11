@@ -139,7 +139,6 @@
     }
 }
 
-
 @media (min-width: 1400px) {
     .about-content {
         padding-inline-end: 90px;
@@ -149,5 +148,9 @@
         display: block;
         top: 46%;
         left: 0;
+    }
+
+    .aboutBanner {
+        max-width: 60%;
     }
 }
